@@ -14,7 +14,6 @@ public class StartApp {
 //        }
         var context = new AnnotationConfigApplicationContext(BeanManagement.class);
         var serviceCar = context.getBean(MockCarLogic.class);
-
         serviceCar.printName("BMW Any CAR!!!");
         context.close();
     }
